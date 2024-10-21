@@ -13,7 +13,6 @@ def deploy_vrf() -> VyperContract:
     vrf_coordinator = vrf_coordinator_v2.deploy(
         MOCK_GAS_PRICE_LINK, MOCK_BASE_FEE, MOCK_WEI_PER_UINT_LINK
     )
-    print(f"Deployed VRF Coordinator to {vrf_coordinator.address}")
     return vrf_coordinator
 
 
