@@ -1,0 +1,52 @@
+[project]
+dependencies = [
+    "snekmate",
+]
+
+[networks.contracts.raffle]
+deployer_script = "deploy_raffle.py"
+
+[networks.contracts.link_token]
+deployer_script = "mock_deployer/deploy_link.py"
+
+[networks.contracts.vrf_coordinator_v2]
+deployer_script = "mock_deployer/deploy_vrf_coordinator.py"
+
+[networks.pyevm.extra_data]
+sub_id = 0
+gas_lane = "0x787d74caea10b2b357790d5b5247c2f63d1d91572a9846f780606e4d953677ae"
+entrance_fee = 1e17
+callback_gas_limit = 500_000
+interval = 60
+
+[networks.sepolia]
+url = "$SEPOLIA_RPC_URL"
+chain_id = 11155111
+
+[networks.sepolia.contracts]
+link_token = { address = "0x779877A7B0D9E8603169DdbD7836e478b4624789" }
+vrf_coordinator_v2 = { address = "0x9DdfaCa8183c41ad55329BdeeD9F6A8d53168B1B" }
+
+[networks.sepolia.extra_data]
+sub_id = 0                                                                      # Add yours here!
+gas_lane = "0x787d74caea10b2b357790d5b5247c2f63d1d91572a9846f780606e4d953677ae"
+entrance_fee = 1e17
+callback_gas_limit = 500_000
+interval = 60
+
+[networks.anvil.extra_data]
+sub_id = 0                                                                      # Add yours here!
+gas_lane = "0x787d74caea10b2b357790d5b5247c2f63d1d91572a9846f780606e4d953677ae"
+entrance_fee = 1e17
+callback_gas_limit = 500_000
+interval = 60
+
+# [networks.anvil]
+# url = "http://127.0.0.1:8545"
+# chain_id = 31337
+# default_account_name = "anvil1"
+# unsafe_password_file = "$ANVIL1_PASSWORD_FILE"
+# live_or_staging = false
+# prompt_live = false
+
+# You can view all configuration options at https://cyfrin.github.io/moccasin/all_moccasin_toml_parameters.html
