@@ -5,6 +5,7 @@ from moccasin.config import get_active_network
 
 
 @pytest.mark.staging
+@pytest.mark.ignore_isolation
 def test_start_raffle():
     active_network = get_active_network()
     raffle = active_network.get_latest_contract_unchecked()
