@@ -7,6 +7,8 @@ from moccasin.config import get_active_network
 def request_winner(raffle: VyperContract):
     if len(raffle.get_players()) == 0:
         raffle.enter_raffle()
+    else: 
+        raffle.request_winner()
 
     while raffle.is_ready_to_request() is False:
         print("Sleeping...")

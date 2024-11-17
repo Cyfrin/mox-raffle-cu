@@ -1,3 +1,8 @@
+<!-- TO TEACH:
+- Formatting (also python formatting)
+- uv linting -->
+
+
 # Mox Raffle
 
 This is part of the Cyfrin Updraft Vyper Course. 

@@ -26,11 +26,11 @@ default_account_name = "default"
 
 [networks.sepolia.contracts]
 link_token = { address = "0x779877A7B0D9E8603169DdbD7836e478b4624789" }
-vrf_coordinator_v2 = { address = "0x9DdfaCa8183c41ad55329BdeeD9F6A8d53168B1B" }
+vrf_coordinator_v2_5 = { address = "0xD7f86b4b8Cae7D942340FF628F82735b7a20893a" }
 
 [networks.sepolia.extra_data]
 sub_id = 0                                                                      # Add yours here!
-gas_lane = "0x787d74caea10b2b357790d5b5247c2f63d1d91572a9846f780606e4d953677ae"
+gas_lane = "0x3fd2fec10d06ee8f65e7f2e95f5c56511359ece3f33960ad8a866ae24a8ff10b"
 entrance_fee = 1e17
 callback_gas_limit = 500_000
 interval = 60
